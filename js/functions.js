@@ -8,8 +8,8 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello(name) {
-    return "Hello, " + name + "!";
+function sayHello(name){
+    return `Hello, ` + (name) + `!`;
 }
 
 /**
@@ -84,7 +84,7 @@ function calculateTip(tipPercentage, totalBill){
  */
 const billTotal = prompt("Enter your bill total:");
 const percentageToTip = prompt("Enter the percentage you would like to tip");
-alert(`You should tip ${billTotal * percentageToTip/100}`);
+alert(`You should tip ${calculateTip(percentageToTip/100, billTotal)}`);
 
 console.log(billTotal);
 console.log(percentageToTip);

@@ -45,7 +45,7 @@ let offerNotExpired = confirm("Has the offer expired?");
 let premiumMember = confirm("Is the person a premium member?");
 
 let productOfferCanBeApplied = (personBoughtMoreThanTwoItems || premiumMember) && !offerNotExpired;
-alert(`It is ${productOfferCanBeApplied} that we can apply the offer.f`);
+alert(`It is ${productOfferCanBeApplied} that we can apply the offer.`);
 
 
 
