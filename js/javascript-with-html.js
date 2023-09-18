@@ -1,9 +1,6 @@
 // alert("hey!");
 
-"use strict"; 
-
-let myNumber = 7; 
-
+"use strict";
 // alert("Hello, I am an alert!");
 
 // let userChoice = confirm("Wait! Don't leave yet! Can I chat with you!");
@@ -16,6 +13,9 @@ let myNumber = 7;
 //    console.log("boooo");
 // }
 
+
+
+let myNumber = 7; 
 
 /*==== PROMPT ===== */
 
