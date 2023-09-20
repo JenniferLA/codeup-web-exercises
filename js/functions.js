@@ -19,9 +19,11 @@ function sayHello(name){
  *
  * console.log 'helloMessage' to check your work
  */
-
-const helloMessage = sayHello("Jennifer");
+sayHello("Jennifer") {
+    let helloMessage = sayHello("Jennifer");
 console.log(helloMessage);
+}
+
 
 /**
  * TODO:
@@ -55,8 +57,8 @@ const random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-function isTwo(number){
-    return number === 2;
+function isTwo(num){
+    return num === 2;
 }
 console.log(isTwo(random));
 
@@ -71,7 +73,7 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(tipPercentage, totalBill){
+function calculateTip(tipPercentage, totalBill) {
     return totalBill * tipPercentage;
 }
 
@@ -103,6 +105,6 @@ console.log(percentageToTip);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(price, discountPercentage){
-    return price - price * discountPercentage;
+function applyDiscount(originalPrice, discountPercentage){
+    return originalPrice - originalPrice * discountPercentage;
 }
