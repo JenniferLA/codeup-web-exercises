@@ -4,7 +4,50 @@ line
 comment
 */
 
-.fancy-header {
-    color: purple; /* single line comment */
+/*.fancy-header {*/
+/*    color: purple; !* single line comment *!*/
+/*    text-decoration: underline;*/
+/*}*/
+
+
+
+h1 {
+    text-align: center;
+}
+
+h1.fancy-header {
+    color: darkslategray;
     text-decoration: underline;
+}
+
+body {
+    background-color: burlywood;
+    background-image: url("https://images.pexels.com/photos/4394244/pexels-photo-4394244.jpeg?auto=compress&cs=tinysrgb&w=800");
+    object-position: center 80%;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: ;
+}
+
+table {
+    padding: 10px 50px 20px;
+    font-size: 2em;
+}
+
+a:link {
+    color: cadetblue;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+a:active {
+    color: salmon;
 }
