@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+nav {
+    background: #c1c1c1;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 1em;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.logo-div {
+    font-size: 3em;
+    padding: .2em 0;
+    margin: auto;
+    font-family: "Montserrat", "Work Sans", sans-serif;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    bottom: 50px;
+}
