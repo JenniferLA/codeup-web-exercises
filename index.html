@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Login Page with absolute positioning</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="positioning/codeup-positioning-exercise/css/resets.css">
+  <link rel="stylesheet" href="positioning/codeup-positioning-exercise/css/layout.css">
+  <link rel="stylesheet" href="positioning/codeup-positioning-exercise/css/styles.css">
+</head>
+<body>
+    <div class="page-wrapper justify-center align-center">
+        <!-- ADD ABSOLUTE POSITIONED IMAGES HERE -->
+        <img id="dots1" src="positioning/codeup-positioning-exercise/images/dots-1.svg" alt="image dots-1">
+        <img id="dots2" src="positioning/codeup-positioning-exercise/images/dots-2.svg" alt="image dots-2">
+        <img id="wavybottom" src="positioning/codeup-positioning-exercise/images/footer-wave-bottom.svg" alt="image wavy-bottom">
+        <img id="wavytop" src="positioning/codeup-positioning-exercise/images/footer-wave-top.svg" alt="image wavy-top">
+        <img id="wavy1" src="positioning/codeup-positioning-exercise/images/wavy-lines-1.svg" alt="image wavy-line-1">
+        <img id="wavy2" src="positioning/codeup-positioning-exercise/images/wavy-lines-2.svg" alt="image wavy-line-2">
+        <div class="container login">
+            <!-- ADD CANCEL BUTTON HERE -->
+                <img id="cancel" src="positioning/codeup-positioning-exercise/images/times-icon.svg">
+            <div class="row">
+                <form class="column gap-20" method="POST">
+                    <h1>Login into Your Account</h1>
+                    <label class="input-group">
+                        <span class="input-label">Email</span>
+                        <input type="email" name="email" placeholder="yourname@company.com" required>
+                    </label>
+                    <div class="d-flex flex-column">
+                        <label class="input-group">
+                            <span class="input-label">Password*</span>
+                            <input type="password" name="password" placeholder="****************" required>
+                        </label>
+                        <div class="d-flex align-center justify-space-between">
+                            <label class="checkbox">
+                                <input type="checkbox" name="remember" checked>
+                                <span class="checkbox-label">Keep me signed in</span>
+                            </label>
+                            <a href="#" class="link">Forgot password?</a>
+                        </div>
+                    </div>
+                    <button type="submit" name="login" class="btn btn-login">Login</button>
+
+                    <ul id="register-info">
+                        <li><p>Don't have an account?</p></li>
+                        <li><a href="#">Register Now</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
