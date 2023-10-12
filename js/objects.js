@@ -51,31 +51,45 @@
          {name: 'Ryan', amount: 250},
          {name: 'George', amount: 320}
      ];
+     function hebOffer() {
+         for (const shopper of shoppers) {
+             discountedAmount(shopper);
+         }
+     }
+    function discountedAmount(shopper) {
+        let output = `Name: ${shopper.name}
+            Amount: $${shopper.amount.toFixed(2)}`;
 
-    function discountedAmount(amount) {
-        if (amount > 200) {
-            const discount = amount * 0.12;
-            return {
-                hasDiscount: true,
-                afterDiscount: discount,
-                totalAmount: amount - discount
-            };
-        } else {
-            return (
-                hasDiscount: false,
-                afterDiscount: 0,
-                totalAmount: amount - discount
-            );
+        if (shopper.amount > 200) {
+            let discount = shopper.amount * 0.12;
+            // return {
+            //     hasDiscount: true,
+            //     afterDiscount: discount,
+            //     totalAmount: amount - discount
+            // };
+        // } else {
+        //     return (
+        //         hasDiscount: false,
+        //         afterDiscount: 0,
+        //         totalAmount: amount - discount
+        //     );
+            discount = discount.toFixed(2);
+            output += `Discount: $${discount}`;
+
+            let total = shopper.amount * 0.88;
+            total = total.toFixed(2);
+            output += `Total: $${total}`;
         }
+        console.log(output);
     }
+    hebOffer();
 
-    shoppers.forEach(function (shopper) {
-        const result = discountedAmount(shopper.amount);
-    })
-
-    console.log(
-        `$(shopper.name) `
-    )
+    // shoppers.forEach(function (shopper) {
+    //     const result = discountedAmount(shopper.amount);
+    // })
+    // console.log(
+    //     `$(shopper.name) `
+    // )
 
 
     /** TODO:
@@ -90,6 +104,48 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    let books =[
+        {
+            title: 'Romeo and Juliet',
+            author: {
+                firstName: "William",
+                lastName: "Shakespeare"
+            }
+        },
+        {
+            title: "To Kill A Mockingbird",
+            author: {
+                firstName: 'Harper',
+                lastName: 'Lee'
+            }
+        },
+        {
+            title: 'Green Eggs and Ham',
+            author: {
+                firstName: 'Dr.',
+                lastName: 'Seuss'
+            }
+        },
+        {
+            title: 'Where the Wild Things Are',
+            author: {
+                firstName: 'Maurice',
+                lastName: 'Sendak'
+            }
+        },
+        {
+            title: 'Calvin and Hobbes',
+            author: {
+                firstName: 'Bill',
+                lastName: 'Watterson'
+            }
+        }
+    ];
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
+
 
     /**
      * TODO:
@@ -114,9 +170,20 @@
      *      Author: Stephen Hawking
      *      ---
      *      ...
+     *
      */
+    function printBooks(books) {
+        for (let i = 0; i < books.length; i++) {
+            const book = books[i];
+        }
+        console.log('Book # ${i}
+        Title: ${book.title}
+        Author: ${book.author.firstName} ${book.author.lastName}
+        ---');
+    }
 
-    /**
+
+     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
      *   name and returns a book object with the properties described
