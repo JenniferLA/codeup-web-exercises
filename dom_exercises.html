@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DOM: Query and Modify</title>
+</head>
+<body>
+
+<h1 id="main-header">Hello World!</h1>
+<ul>
+  <li data-dbid="1">Item 1</li>
+  <li data-dbid="2">Item 2</li>
+  <li data-dbid="3">Item 3</li>
+  <li data-dbid="4">Item 4</li>
+  <li data-dbid="5">Item 5</li>
+</ul>
+<h2 id="sub-header">Hello Again.</h2>
+<p class="sub-paragraph">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+  aliquip ex ea commodo consequat. Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+  culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<script>
+  "use strict";
+  // TODO: Uncomment next line and get the main header element by id
+  const mainHeader = document.getElementById('main-header');
+  console.log(mainHeader);
+
+  // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+  mainHeader.innerHTML= "JavaScript is Cool";
+
+  // TODO: Uncomment the next line and get the sub header element by id
+  const subHeader = document.querySelector('#sub-header');
+  console.log(subHeader);
+
+  // TODO: Set the text color of subHeader to blue
+  subHeader.style.color = "blue";
+
+  // TODO: Uncomment the next line and get all list items
+  const listItems = document.querySelectorAll("li");
+  console.log(listItems);
+
+  // TODO: Set text color on every other list item to grey
+  for (let i = 0; i < listItems.length; i+=2) {
+    listItems[i].style.color = "grey";
+  }
+
+  // TODO: Set text color of li with dbid = 1 to blue
+  // [...document.getElementsByTagName("li")].forEach(listItem => console.log(listItem.style.color = "blue"));
+  for (let i = 0; i < listItems.length; i++) {
+    listItems[0].style.color = "blue";
+  }
+
+
+  // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+  const subParagraphs = document.querySelector('.sub-paragraph');
+  console.log(subParagraphs);
+
+  // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+  subParagraphs.innerText = "Mission Accomplished";
+  console.log(subParagraphs.innerText);
+
+
+// Add code that will change the background color of an h1 element when clicked:
+  document.querySelector("#main-header").addEventListener("click", function () {
+    this.style.backgroundColor = "blue";
+  });
+
+// Make all paragraphs have a font size of 18px when they are double clicked:
+  document.querySelector("p").addEventListener("dblclick", function () {
+    this.style.fontSize = "18px";
+  });
+
+// Set all li text color to red when the mouse is hovering; reset to black when it is not.
+  const allLis = document.querySelector("li")
+  for (let i = 0; i < ; i++) {
+    
+  }
+          .addEventListener("mouseenter", function () {
+    this.style.color = "red";
+  });
+  document.querySelector("ul").addEventListener("mouseleave", function () {
+    this.style.color = "black";
+  })
+
+
+</script>
+</body>
+</html>

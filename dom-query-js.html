@@ -24,6 +24,11 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button id="btn1"> JavaScript is cool!</button>
+<button id="btn2"> Change subHeader to blue</button>
+<button id="btn3"> Grey out every other list item</button>
+<button id="btn4"> Mission Accomplished!</button>
+
 <script>
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
@@ -34,7 +39,7 @@
         mainHeader.innerHTML= "JavaScript is Cool";
 
         // TODO: Uncomment the next line and get the sub header element by id
-        const subHeader = document.querySelector('sub-header');
+        const subHeader = document.querySelector('#sub-header');
         console.log(subHeader);
 
         // TODO: Set the text color of subHeader to blue
@@ -63,6 +68,36 @@
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs.innerText = "Mission Accomplished";
         console.log(subParagraphs.innerText);
+        document.querySelector('#btn4').addEventListener()
+
+
+        // Document Object Model (DOM) Events
+        // Add 4 buttons to the page. Attach click event listeners to each of the buttons and have the handlers perform the modifications that were automatically taking place.
+
+
+        const button1 = document.querySelector('#btn1');
+        btn1.addEventListener("click", function () {
+            console.log(event.target.innerHTML);
+        });
+
+        const button2 = document.querySelector('#btn2');
+        btn2.addEventListener("click", function () {
+            console.log(event.target.style.color);
+        })
+
+        const button3 = document.querySelector('#btn3');
+        btn3.addEventListener("click", function () {
+            console.log(event.target.style.color);
+        })
+
+        const button4 = document.querySelector('#btn4');
+        btn4.addEventListener("click", function () {
+            console.log(event.target.innerText);
+        })
+
+
+
+
 
 </script>
 </body>
