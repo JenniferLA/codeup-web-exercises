@@ -9,14 +9,37 @@
 <script>
   "use strict";
 
-  document.addEventListener("keyup", event => console.log(event.key) )
 
-  const konamiCode = "Arrow Up Arrow Up Arrow Down Arrow Down Arrow Left Arrow Right Arrow Left Arrow Right b a Enter";
-  // "Arrow Up Arrow Up".includes("Arrow Up");
-  // console.log(konamiCode.includes("Arrow Up Arrow Down"));
-  function konamiCodeSuccess () {
-    if (konamiCode.includes("Arrow Up Arrow Up Arrow Down Arrow Down Arrow Left Arrow Right Arrow Left Arrow Right b a")) {
-  } else if
+  const konamiCode = [
+    "ArrowUp",
+    "ArrowUp",
+    "ArrowDown",
+    "ArrowDown",
+    "ArrowLeft",
+    "ArrowRight",
+    "ArrowLeft",
+    "ArrowRight",
+    "b",
+    "a",
+    "Enter"
+  ];
+
+  let konamiCodeIndex = 0;
+
+  document.addEventListener("keyup", event => {
+    if (event.key === konamiCode[konamiCodeIndex]) {
+      konamiCodeIndex++;
+      if (konamiCodeIndex === konamiCode.length) {
+        // Konami Code entered successfully
+        document.body.style.backgroundColor = "blue";
+        alert("You have added 30 lives!")
+        konamiCodeIndex = 0;
+      }
+    } else {
+      konamiCodeIndex = 0;
+    }
+  });
+
 
 </script>
 </body>
